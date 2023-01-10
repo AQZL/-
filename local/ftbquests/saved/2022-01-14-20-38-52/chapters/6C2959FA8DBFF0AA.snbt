@@ -1,0 +1,40 @@
+{
+	id: "6C2959FA8DBFF0AA"
+	group: "531B2AEA1BA39DC7"
+	order_index: 1
+	filename: "6C2959FA8DBFF0AA"
+	title: "魔法类"
+	icon: "ttigraas:pride"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "使用捕食者挖原石10W个"
+		x: -0.5d
+		y: 0.0d
+		description: [
+			"============================"
+			"我知道你会用镐子的对不对？"
+			"============================"
+		]
+		id: "733EF3EBDF5AC9FF"
+		tasks: [{
+			id: "0ED1A87F808893F8"
+			type: "item"
+			item: "minecraft:stone"
+			count: 100000L
+		}]
+		rewards: [
+			{
+				id: "42F0D012822C354E"
+				type: "item"
+				item: "enderitemod:enderite_ingot"
+				count: 32
+			}
+			{
+				id: "376262A6AB5BE02F"
+				type: "xp_levels"
+				xp_levels: 500
+			}
+		]
+	}]
+}

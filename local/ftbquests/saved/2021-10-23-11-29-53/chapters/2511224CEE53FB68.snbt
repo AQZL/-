@@ -1,0 +1,59 @@
+{
+	id: "2511224CEE53FB68"
+	group: "3430C3DC79231945"
+	order_index: 0
+	filename: "2511224CEE53FB68"
+	title: "新手章(选做)"
+	icon: "minecraft:grass_block"
+	subtitle: ["完成基本的新手成就"]
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "\"等价\"交换[物品换技能]"
+			icon: "ttigraas:predator"
+			x: -8.5d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "如果重生有这个技能的可以不做"
+			dependency_requirement: "all_started"
+			optional: true
+			id: "5FD5402351C68700"
+			tasks: [{
+				id: "731D46BEAE9FC671"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "494EE20E48AE9196"
+				type: "item"
+				item: "ttigraas:predator"
+				only_one: true
+			}]
+		}
+		{
+			x: -11.0d
+			y: 0.0d
+			dependencies: ["5FD5402351C68700"]
+			dependency_requirement: "all_started"
+			optional: true
+			id: "5A39CA78EC49ED31"
+			tasks: [{
+				id: "350EB7F724093138"
+				type: "advancement"
+				title: "使用捕食者喝点\"恒河\"水捕食者使用方法:命令：/consume blocks/water/lava分别对应:喝方块/喝水/喝岩浆"
+				advancement: "ttigraas:water_current_control_ad"
+				criterion: "解锁成就:水流控制"
+			}]
+			rewards: [{
+				id: "515D03683854E8C0"
+				type: "item"
+				item: "minecraft:emerald_block"
+				count: 5
+				only_one: true
+			}]
+		}
+	]
+}

@@ -1,0 +1,504 @@
+{
+	id: "657D274953BF2751"
+	group: "3430C3DC79231945"
+	order_index: 4
+	filename: "657D274953BF2751"
+	title: "月球章"
+	icon: "advancedrocketry:spacehelmet"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "去月球！"
+			x: -10.0d
+			y: 0.0d
+			subtitle: "(必须全部完成任务先)"
+			hide: false
+			id: "5DBF4F45C92FAA2E"
+			tasks: [{
+				id: "2E8769A4E93469C4"
+				type: "item"
+				item: "advancedrocketry:launchpad"
+				count: 16L
+			}]
+			rewards: [{
+				id: "21D37B4E922EF89A"
+				type: "item"
+				item: "advancedrocketry:launchpad"
+				count: 16
+				only_one: true
+			}]
+		}
+		{
+			x: -8.0d
+			y: -3.0d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "3C2E1FE1CBF9325C"
+			tasks: [{
+				id: "2CFF01B74191DDC7"
+				type: "item"
+				item: "advancedrocketry:structuretower"
+				count: 16L
+			}]
+			rewards: [{
+				id: "60C809A6C26A7145"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "62EF13AB741120FF"
+			tasks: [{
+				id: "1EDA40D60AAC9E04"
+				type: "item"
+				item: "advancedrocketry:fuelingstation"
+			}]
+			rewards: [{
+				id: "4DC5017745790DE4"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.0d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "7FEB91735FA5684B"
+			tasks: [{
+				id: "09DE35C6CC1E448C"
+				type: "item"
+				item: "advancedrocketry:guidancecomputer"
+			}]
+			rewards: [{
+				id: "20E5AD7325EE661C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "50C55E02A63F7D8D"
+			tasks: [{
+				id: "78EB0E2E86BB044C"
+				type: "item"
+				item: "advancedrocketry:rocketassembler"
+			}]
+			rewards: [{
+				id: "19FFD56207106297"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "太空衣服"
+			x: -8.0d
+			y: 1.0d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "520D5ACE2355373C"
+			tasks: [
+				{
+					id: "5B085359C9EA9E3B"
+					type: "item"
+					item: "advancedrocketry:spacehelmet"
+				}
+				{
+					id: "1AAF5B09AA1B7072"
+					type: "item"
+					item: "advancedrocketry:spaceboots"
+				}
+				{
+					id: "1301A8885CD209CE"
+					type: "item"
+					item: "advancedrocketry:spacechest"
+				}
+				{
+					id: "20A8333211EC7257"
+					type: "item"
+					item: "advancedrocketry:spaceleggings"
+				}
+			]
+			rewards: [{
+				id: "775DAFF3783C7305"
+				type: "item"
+				item: "advancedrocketry:bucketrocketfuel"
+				count: 5
+				only_one: true
+			}]
+		}
+		{
+			title: "需要氧气!"
+			x: -8.0d
+			y: 2.0d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "7C69AD3D3E24D7C4"
+			tasks: [
+				{
+					id: "5341394C8778827D"
+					type: "item"
+					item: "advancedrocketry:pressure_tank_med"
+				}
+				{
+					id: "444EF8737653A206"
+					type: "item"
+					item: "advancedrocketry:bucketoxygen"
+				}
+			]
+			rewards: [{
+				id: "5CDBED769A06F426"
+				type: "item"
+				item: "advancedrocketry:pressure_tank_superhigh"
+				only_one: true
+			}]
+		}
+		{
+			x: -12.5d
+			y: -2.5d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "3B68A6C78A251334"
+			tasks: [{
+				id: "0384A8F03563712F"
+				type: "item"
+				item: "advancedrocketry:seat"
+			}]
+			rewards: [{
+				id: "0BAC1F048384C291"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -12.5d
+			y: -1.5d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "1F09A792E7C92F9F"
+			tasks: [{
+				id: "1BA84009F481D146"
+				type: "item"
+				item: "advancedrocketry:rocketmotor"
+			}]
+			rewards: [{
+				id: "2E8E1A467F1EB42D"
+				type: "item"
+				item: "advancedrocketry:rocketmotor"
+				count: 9
+				only_one: true
+			}]
+		}
+		{
+			x: -14.0d
+			y: -1.5d
+			dependencies: ["1F09A792E7C92F9F"]
+			id: "78E549E80EC5EE5C"
+			tasks: [{
+				id: "52311DCDC7903772"
+				type: "item"
+				item: "advancedrocketry:advrocketmotor"
+				count: 9L
+			}]
+			rewards: [{
+				id: "3A6E856D2E67DA48"
+				type: "xp"
+				xp: 1000
+			}]
+		}
+		{
+			x: -12.5d
+			y: -0.5d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "23CE47DC63F666F6"
+			tasks: [{
+				id: "66A0598CBF76C1BC"
+				type: "item"
+				item: "advancedrocketry:fueltank"
+				count: 32L
+			}]
+			rewards: [{
+				id: "676470889037A623"
+				type: "item"
+				item: "advancedrocketry:bucketrocketfuel"
+				count: 6
+				only_one: true
+			}]
+		}
+		{
+			title: "宇航服扩展"
+			x: -12.5d
+			y: 0.5d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "5A08D433E61B1818"
+			tasks: [{
+				id: "020EFE729D589406"
+				type: "item"
+				item: "advancedrocketry:jetpack"
+			}]
+			rewards: [{
+				id: "5BE571F0D284E820"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			title: "宇航服扩展"
+			x: -12.5d
+			y: 1.5d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "03C826590B6784BC"
+			tasks: [{
+				id: "748CAAF89B66EDBB"
+				type: "item"
+				item: "advancedrocketry:upgrade_boots"
+			}]
+			rewards: [{
+				id: "17A78CB1A708F9C2"
+				type: "item"
+				item: "minecraft:diamond_block"
+				only_one: true
+			}]
+		}
+		{
+			title: "去月球再挖点土awa"
+			x: -5.5d
+			y: 0.0d
+			id: "0434DE775B6E9405"
+			tasks: [{
+				id: "2A36CE9291281572"
+				type: "item"
+				item: "advancedrocketry:moonturf"
+				count: 64L
+			}]
+			rewards: [{
+				id: "29397BF7A3B17639"
+				type: "item"
+				item: {
+					id: "advancedrocketry:carbon_scrubber_cartridge"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				count: 16
+				only_one: true
+			}]
+		}
+		{
+			title: "建立月球基地!"
+			x: -1.5d
+			y: 0.0d
+			dependencies: [
+				"0434DE775B6E9405"
+				"1F5A34B7D0A7E8F6"
+			]
+			id: "4CE030C239A474C0"
+			tasks: [{
+				id: "05B721C51493FE82"
+				type: "item"
+				item: "advancedrocketry:circlelight"
+				count: 32L
+			}]
+			rewards: [{
+				id: "4792981CF6682BC8"
+				type: "item"
+				title: "基地方块"
+				item: "minecraft:white_concrete"
+				count: 640
+				only_one: true
+			}]
+		}
+		{
+			title: "我们基地需要氧气"
+			x: 0.5d
+			y: -3.0d
+			dependencies: ["18452A6478CBA325"]
+			id: "1F5A34B7D0A7E8F6"
+			tasks: [{
+				id: "77B64443FA0A6B0D"
+				type: "item"
+				item: "advancedrocketry:oxygenvent"
+			}]
+			rewards: [{
+				id: "52B7912FF446249C"
+				type: "item"
+				item: "advancedrocketry:oxygenscrubber"
+				only_one: true
+			}]
+		}
+		{
+			title: "后期需要"
+			x: -10.0d
+			y: -1.5d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "5C67B6EBA9D7394D"
+			tasks: [{
+				id: "366D425CCB935ECF"
+				type: "item"
+				item: "minecraft:glowstone"
+				count: 64L
+			}]
+			rewards: [{
+				id: "7D7CD0A347513B3A"
+				type: "item"
+				item: "advancedrocketry:oxygenscrubber"
+				only_one: true
+			}]
+		}
+		{
+			title: "检查一下基地有没有什么透气的地方!"
+			x: 0.5d
+			y: -4.5d
+			dependencies: ["1F5A34B7D0A7E8F6"]
+			id: "37ACF9BABF0012BA"
+			tasks: [{
+				id: "4CA9DBCF7E1238D6"
+				type: "item"
+				item: {
+					id: "advancedrocketry:sealdetector"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7A1751D0E871918B"
+				type: "item"
+				item: "advancedrocketry:oxygenscrubber"
+				only_one: true
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["1F5A34B7D0A7E8F6"]
+			id: "02E9C9DD5240798E"
+			tasks: [{
+				id: "3E3382C591002E65"
+				type: "item"
+				item: "advancedrocketry:oxygenscrubber"
+				count: 10L
+			}]
+			rewards: [{
+				id: "77665A073616D97B"
+				type: "item"
+				item: "advancedrocketry:bucketrocketfuel"
+				count: 6
+			}]
+		}
+		{
+			x: -10.0d
+			y: 1.5d
+			dependencies: ["5DBF4F45C92FAA2E"]
+			id: "0617B9EC66A4FB7B"
+			tasks: [
+				{
+					id: "2D34F16120778E82"
+					type: "item"
+					item: "libvulpes:enhanced_motor"
+				}
+				{
+					id: "42E306E7CA9A5960"
+					type: "item"
+					item: "libvulpes:motor"
+				}
+				{
+					id: "071D67A368A0A32C"
+					type: "item"
+					item: "libvulpes:elite_motor"
+				}
+				{
+					id: "67569215541E7D37"
+					type: "item"
+					item: "libvulpes:advanced_motor"
+				}
+			]
+			rewards: [{
+				id: "04DD54B3B88FC346"
+				type: "item"
+				item: "libvulpes:elite_motor"
+				count: 3
+				only_one: true
+			}]
+		}
+		{
+			x: -10.0d
+			y: 4.0d
+			dependencies: ["0617B9EC66A4FB7B"]
+			id: "4636C0B34502AE65"
+			tasks: [{
+				id: "36772AFADD60B638"
+				type: "item"
+				item: "libvulpes:fansteel"
+				count: 16L
+			}]
+			rewards: [{
+				id: "7CDF90EC6E67C1A5"
+				type: "item"
+				item: "advancedrocketry:bucketoxygen"
+				count: 3
+				only_one: true
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			dependencies: ["4636C0B34502AE65"]
+			id: "18452A6478CBA325"
+			tasks: [{
+				id: "249426853AD92FF4"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 64L
+			}]
+			rewards: [{
+				id: "127CF8345E9DFAC8"
+				type: "item"
+				item: "advancedrocketry:oxygenvent"
+				only_one: true
+			}]
+		}
+		{
+			title: "产生氧气"
+			x: -1.5d
+			y: -3.0d
+			subtitle: "24小时换一次(等价交换中的修复护符可修复)"
+			dependencies: ["1F5A34B7D0A7E8F6"]
+			id: "1AE9B601A392E52E"
+			tasks: [{
+				id: "4EAE9872E1A55CF7"
+				type: "item"
+				item: {
+					id: "advancedrocketry:carbon_scrubber_cartridge"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "127CA976625609B9"
+					type: "item"
+					item: "advancedrocketry:oxygenscrubber"
+					only_one: true
+				}
+				{
+					id: "2F3DC610F447EB47"
+					type: "item"
+					item: {
+						id: "projecte:repair_talisman"
+						Count: 1b
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+					only_one: true
+				}
+			]
+		}
+	]
+}

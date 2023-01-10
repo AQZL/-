@@ -1,0 +1,487 @@
+{
+	id: "7778757F7378FFFB"
+	group: "3430C3DC79231945"
+	order_index: 4
+	filename: "7778757F7378FFFB"
+	title: "机械动力"
+	icon: "create:cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 3.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"制作一个小齿轮!"
+				"棒棒哒"
+			]
+			id: "1A556CFBB2BE92C9"
+			tasks: [{
+				id: "53AC9AB5C8E0EEB9"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+			rewards: [{
+				id: "2D9C6491FBBCE269"
+				type: "item"
+				item: "create:large_cogwheel"
+				count: 5
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			subtitle: "费力杠杆"
+			description: [
+				"============================"
+				"人力动力似乎不太行啊[费力杠杆]"
+				"如果你需要这个就做出来吧!"
+				"============================"
+			]
+			dependencies: ["1A556CFBB2BE92C9"]
+			id: "55E235B97E4650FB"
+			tasks: [{
+				id: "2D966D03BB4529C9"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "627424B072FC8A63"
+				type: "item"
+				item: "tofucraft:tofuhamburg"
+				count: 5
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			subtitle: "前期动力"
+			description: [
+				"============================"
+				"前期的时候简直就是好东西"
+				"快做出这个吧!再在上面放一桶水注意用东西围起来"
+				"============================"
+			]
+			dependencies: ["1A556CFBB2BE92C9"]
+			id: "127A0EEEFA779945"
+			tasks: [{
+				id: "4653555CA57E9557"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "61311FA15450C5B7"
+				type: "xp"
+				xp: 1000
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			subtitle: "前期或许有用"
+			description: [
+				"============================"
+				"可以把东西磨成粉的玩意!"
+				"你前期会需要到他的"
+				"============================"
+			]
+			dependencies: ["127A0EEEFA779945"]
+			id: "3F7B577285276CCC"
+			tasks: [{
+				id: "28635C98A8D8D421"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "158B0365E526AE70"
+				type: "xp"
+				xp: 1000
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			description: [
+				"============================"
+				"一个东西的前置物品"
+				"============================"
+			]
+			dependencies: ["127A0EEEFA779945"]
+			id: "71541158BFC72780"
+			tasks: [{
+				id: "6B887186C57DBBC3"
+				type: "item"
+				item: "create:depot"
+			}]
+			rewards: [{
+				id: "2EE981EA48CBE255"
+				type: "item"
+				item: "minecraft:emerald_block"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"============================"
+				"压压压!把所有东西压成板"
+				"这个玩意就像压力机"
+				"(压东西)"
+				"============================"
+			]
+			dependencies: ["71541158BFC72780"]
+			id: "4E57D904B9F4D70C"
+			tasks: [{
+				id: "7BE664809B4D1CA8"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "7921988E03DF1377"
+				type: "item"
+				item: "minecraft:diamond_block"
+				count: 3
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			description: [
+				"============================"
+				"把动力带向远方!"
+				"============================"
+			]
+			dependencies: ["1A556CFBB2BE92C9"]
+			id: "0199EFC45BD1B668"
+			tasks: [{
+				id: "785F8F91B840FFD8"
+				type: "item"
+				item: "create:shaft"
+			}]
+			rewards: [{
+				id: "4FF8B5F36D71D3CB"
+				type: "item"
+				item: "minecraft:kelp"
+				count: 64
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			description: [
+				"============================"
+				"或许可以用他来做出红色的石英"
+				"电子管的前置!"
+				"============================"
+			]
+			dependencies: ["1A556CFBB2BE92C9"]
+			id: "26E88658BA2C09F0"
+			tasks: [{
+				id: "3348BC79C1E46D95"
+				type: "item"
+				item: {
+					id: "create:red_sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "524BDA06579EC4F7"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 32
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			description: [
+				"============================"
+				"更加强大的动力!"
+				"搅拌机或许需要这动力"
+				"============================"
+			]
+			dependencies: ["4E57D904B9F4D70C"]
+			id: "4FE1F87B5D154E40"
+			tasks: [{
+				id: "094B98DDB91EB7FA"
+				type: "item"
+				item: "create:windmill_bearing"
+			}]
+			rewards: [{
+				id: "73590899393E7264"
+				type: "item"
+				item: "create:white_sail"
+				count: 16
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			description: [
+				"============================"
+				"调整物品方向"
+				"是个好东西"
+				"============================"
+			]
+			dependencies: ["1A556CFBB2BE92C9"]
+			id: "4267FEFBDE7A7414"
+			tasks: [{
+				id: "5B9BB5F75724D51A"
+				type: "item"
+				item: "create:wrench"
+			}]
+			rewards: [{
+				id: "4C92AF82E71278BD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.5d
+			y: 6.0d
+			description: [
+				"融合矿物！获得新的矿物"
+				"这个是个好东西啊"
+			]
+			dependencies: ["4FE1F87B5D154E40"]
+			id: "4F79BB8DA585114A"
+			tasks: [{
+				id: "7C1659BA12DD5DF4"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+			rewards: [{
+				id: "05459B1933F4262A"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			title: "传送带|自动化"
+			x: 7.5d
+			y: 7.5d
+			description: [
+				"==============================="
+				"自动化传送带!"
+				"==============================="
+			]
+			dependencies: ["4F79BB8DA585114A"]
+			id: "766B17A1591F031B"
+			tasks: [{
+				id: "28BBAD9626871C54"
+				type: "item"
+				item: "create:belt_connector"
+				count: 16L
+			}]
+			rewards: [{
+				id: "62DAFF58AB1BD677"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			title: "搅拌搅拌"
+			x: 9.0d
+			y: 6.0d
+			description: [
+				"==============================="
+				"搅拌出黄铜"
+				"==============================="
+			]
+			dependencies: ["4F79BB8DA585114A"]
+			id: "043CCA6FBEE7DB65"
+			tasks: [{
+				id: "01A29CBCACD87B68"
+				type: "item"
+				item: "create:crushed_brass"
+				count: 12L
+			}]
+			rewards: [{
+				id: "1EAFE9633A48A4EA"
+				type: "item"
+				item: "create:brass_block"
+			}]
+		}
+		{
+			title: "进入黄铜时代！"
+			x: 10.5d
+			y: 6.0d
+			description: [
+				"==============================="
+				"中期物品!"
+				"更好的粉碎物品"
+				"==============================="
+			]
+			dependencies: ["043CCA6FBEE7DB65"]
+			id: "6CBE7338DB1FA76B"
+			tasks: [{
+				id: "083B26EF708E0602"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+			rewards: [{
+				id: "526679E8CD0D51CA"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 9
+			}]
+		}
+		{
+			x: 12.0d
+			y: 4.5d
+			subtitle: "粉碎所有！"
+			description: [
+				"==============================="
+				"哇塞！这是个大家伙"
+				"人掉下去来会不会死掉？"
+				"危险动作请勿模仿！"
+				"==============================="
+			]
+			dependencies: ["6CBE7338DB1FA76B"]
+			id: "6ED5109BEAB694FE"
+			tasks: [{
+				id: "2541BEC8F9A047CE"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+			rewards: [{
+				id: "1D7CDC3DCD029C15"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			description: [
+				"==============================="
+				"查看动力"
+				"小心崩坏了把机器"
+				"==============================="
+			]
+			dependencies: ["127A0EEEFA779945"]
+			id: "56EB10E5713DE5E3"
+			tasks: [{
+				id: "0C58AEB556DCE063"
+				type: "item"
+				item: "create:speedometer"
+				only_from_crafting: false
+			}]
+			rewards: [{
+				id: "4CA2655DCC73D60A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "黄铜中的蒸汽时代!"
+			x: 12.0d
+			y: 6.0d
+			description: [
+				"==============================="
+				"哇！有蒸汽啦！大帝国革命开始！"
+				"==============================="
+			]
+			dependencies: ["6CBE7338DB1FA76B"]
+			id: "208D7C9779DDEEC0"
+			tasks: [
+				{
+					id: "4FD44021752E61FD"
+					type: "item"
+					item: "create:flywheel"
+				}
+				{
+					id: "16E87B60CB8051D3"
+					type: "item"
+					item: "create:furnace_engine"
+				}
+			]
+			rewards: [{
+				id: "3901259837E52FC7"
+				type: "item"
+				item: "create:brass_ingot"
+				count: 32
+			}]
+		}
+		{
+			x: 14.0d
+			y: 5.0d
+			description: [
+				"==============================="
+				"自动化时代吗?那有那么快只是萌芽"
+				"==============================="
+			]
+			dependencies: ["208D7C9779DDEEC0"]
+			id: "42BE3B5BD5D31E7E"
+			tasks: [{
+				id: "24ACF83E76FA0A25"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+			rewards: [{
+				id: "74449418AE81EEC9"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 10
+			}]
+		}
+		{
+			x: 14.0d
+			y: 7.0d
+			description: [
+				"==============================="
+				"自动化？不可能"
+				"==============================="
+				"其实是可能的哦----作者"
+			]
+			dependencies: ["208D7C9779DDEEC0"]
+			id: "56601096C9DA291D"
+			tasks: [{
+				id: "4609F03C9FB29031"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "40FE0BD0BE38F2E6"
+				type: "item"
+				item: "minecraft:gold_block"
+				count: 6
+			}]
+		}
+		{
+			title: "自动化与机械化时代!"
+			icon: "create:large_cogwheel"
+			x: 17.5d
+			y: 6.0d
+			description: [
+				"==============================="
+				"来把基础教程已经完成了！"
+				"剩下的就要看你自己了!"
+				"加油加油加油！！！"
+				"==============================="
+			]
+			dependencies: [
+				"42BE3B5BD5D31E7E"
+				"56601096C9DA291D"
+			]
+			id: "440092A06958A34E"
+			tasks: [{
+				id: "1D1E07A3C2C61352"
+				type: "xp"
+				value: 50L
+				points: false
+			}]
+			rewards: [{
+				id: "29CDF46DA83CB990"
+				type: "item"
+				item: "create:belt_connector"
+				count: 128
+			}]
+		}
+	]
+}

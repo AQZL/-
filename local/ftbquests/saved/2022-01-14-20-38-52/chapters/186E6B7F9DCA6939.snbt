@@ -1,0 +1,67 @@
+{
+	id: "186E6B7F9DCA6939"
+	group: "531B2AEA1BA39DC7"
+	order_index: 2
+	filename: "186E6B7F9DCA6939"
+	title: "怪物类"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.0d
+			y: -1.0d
+			id: "7D54FE0F4B305D43"
+			tasks: [{
+				id: "0CE0190611F2B086"
+				type: "kill"
+				title: "僵尸"
+				entity: "minecraft:zombie"
+				value: 1000L
+			}]
+			rewards: [{
+				id: "4509FA1FF9DE9AF2"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 64
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			dependencies: ["7D54FE0F4B305D43"]
+			id: "202CB092D281FA72"
+			tasks: [{
+				id: "760DED48D825639E"
+				type: "kill"
+				title: "僵尸"
+				entity: "minecraft:zombie"
+				value: 10000L
+			}]
+			rewards: [{
+				id: "63ED51C2946FB194"
+				type: "item"
+				item: "minecraft:gold_block"
+				count: 64
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			id: "3A9839097CB4889F"
+			tasks: [{
+				id: "0077B3A4495C7B24"
+				type: "kill"
+				title: "深海霸王!就是我自己！"
+				entity: "ttigraas:megalodon"
+				value: 1000L
+			}]
+			rewards: [{
+				id: "48CD157F40C98BFD"
+				type: "item"
+				item: "minecraft:emerald_block"
+				count: 64
+			}]
+		}
+	]
+}

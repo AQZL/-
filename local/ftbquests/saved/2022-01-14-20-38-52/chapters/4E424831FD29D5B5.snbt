@@ -1,0 +1,59 @@
+{
+	id: "4E424831FD29D5B5"
+	group: "3430C3DC79231945"
+	order_index: 7
+	filename: "4E424831FD29D5B5"
+	title: "魔法史莱姆章"
+	icon: "ttigraas:pride"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "换取地狱门"
+			icon: "minecraft:totem_of_undying"
+			x: 0.0d
+			y: -2.5d
+			description: [
+				"======================================="
+				"自己是非洲人?"
+				"找不到地狱门?"
+				"那就换!"
+				"======================================="
+			]
+			id: "3FEFDDD63963E899"
+			tasks: [{
+				id: "5BCCEF5388FCBB32"
+				type: "item"
+				item: "minecraft:diamond_block"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "01805004013C8CB3"
+				type: "item"
+				item: "ttigraas:spiritual_portal"
+				count: 2
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			description: [
+				"======================================="
+				"重置你的种族!"
+				"======================================="
+			]
+			id: "35F3C7656678A160"
+			tasks: [{
+				id: "3D2D0223536294AE"
+				type: "item"
+				item: "ttigraas:race_reroll_scroll"
+			}]
+			rewards: [{
+				id: "3935F6C7F08CE5C6"
+				type: "item"
+				item: "ttigraas:skill_reroll_scroll"
+			}]
+		}
+	]
+}

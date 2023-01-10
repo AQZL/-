@@ -1,0 +1,561 @@
+{
+	id: "49004351D004BCFC"
+	group: "3430C3DC79231945"
+	order_index: 8
+	filename: "49004351D004BCFC"
+	title: "建设城市!"
+	icon: "twilightforest:twilight_oak_planks"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -0.5d
+			description: [
+				"======================================="
+				"建设城市的第一步!需要这个玩意"
+				"======================================="
+			]
+			id: "4893BF7A228F0B75"
+			tasks: [{
+				id: "3813C066AE0C14EF"
+				type: "item"
+				item: "minecolonies:supplycampdeployer"
+			}]
+			rewards: [{
+				id: "3BDEE0A632AFCB33"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			description: [
+				"======================================="
+				"没政府你建设个屁!"
+				"合成出来！"
+				"======================================="
+				"有村民后别让他们作死哦~"
+				"虽然说会重新刷新出来= ="
+				"======================================="
+			]
+			dependencies: ["4893BF7A228F0B75"]
+			id: "5BE10D0497CE6787"
+			tasks: [{
+				id: "3D002DC8BBAFD904"
+				type: "item"
+				item: "minecolonies:blockhuttownhall"
+			}]
+			rewards: [{
+				id: "02C6A3A6AB5FCB32"
+				type: "item"
+				item: "minecolonies:blockhutbuilder"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			description: [
+				"======================================="
+				"没地方住他们是不会干活的!awa"
+				"建造他们需要很多的材料你都有吗"
+				"======================================="
+			]
+			dependencies: ["5BE10D0497CE6787"]
+			id: "710282AFE9024E19"
+			tasks: [{
+				id: "1A2482E3F08826DD"
+				type: "item"
+				item: "minecolonies:blockhutcitizen"
+			}]
+			rewards: [{
+				id: "27F9719DA07ACF0C"
+				type: "item"
+				title: "给你亿点木头"
+				item: "minecraft:oak_planks"
+				count: 640
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			description: [
+				"======================================="
+				"建造大学可以研究更多建筑!"
+				"发展经济啊|军事啊这些"
+				"======================================="
+			]
+			dependencies: ["5BE10D0497CE6787"]
+			id: "55FE97E51BA687C9"
+			tasks: [{
+				id: "5F0AB9108C16A2D1"
+				type: "item"
+				item: "minecolonies:blockhutuniversity"
+			}]
+			rewards: [{
+				id: "54942DA2C8F050A5"
+				type: "item"
+				title: "他们建造这个需要大量食物补充能量！"
+				item: "minecraft:bread"
+				count: 64
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: [
+				"这个可以让市民补充营养!"
+				"======================================="
+				"这个是个大宝贝"
+			]
+			dependencies: ["5BE10D0497CE6787"]
+			id: "7966281604E31F57"
+			tasks: [{
+				id: "121E79F77C45C46B"
+				type: "item"
+				item: "minecolonies:blockhutcook"
+			}]
+			rewards: [{
+				id: "77E5FC4BD0D7DC17"
+				type: "item"
+				item: "minecraft:kelp"
+				count: 1000
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			description: [
+				"======================================="
+				"没农场你的市民会全部饿死awa"
+				"不过有了这个就不会了(为什么不玩家自己种?= =)"
+				"======================================="
+			]
+			dependencies: ["5BE10D0497CE6787"]
+			id: "2A3C898402303096"
+			tasks: [
+				{
+					id: "45FE2A1C8D2DB676"
+					type: "item"
+					item: "minecolonies:blockhutfarmer"
+				}
+				{
+					id: "7C9BF5967CC8D2F7"
+					type: "item"
+					item: "minecolonies:blockhutfield"
+				}
+			]
+			rewards: [{
+				id: "769A1E6B8C514E8C"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+				count: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: [
+				"======================================="
+				"守卫你的村民"
+				"到了晚上怪物会杀死村民(如果死的是技能牛逼的村民就不好了)"
+				"======================================="
+			]
+			dependencies: ["55FE97E51BA687C9"]
+			id: "5BE7748B24E4FEDB"
+			tasks: [
+				{
+					id: "759582F79EB6A3AD"
+					type: "item"
+					item: "minecolonies:blockhutguardtower"
+				}
+				{
+					id: "3503EFAA141DBCFF"
+					type: "item"
+					item: "minecolonies:blockhutbarrackstower"
+				}
+				{
+					id: "6B7864C2C3559F72"
+					type: "item"
+					item: "minecolonies:blockhutbarracks"
+				}
+			]
+			rewards: [{
+				id: "7BD4BC0747AFBB9C"
+				type: "item"
+				item: "minecraft:diamond_block"
+				count: 5
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: [
+				"======================================="
+				"制作面包与出售面包"
+				"不怕村民饿死啦!(....农田和餐厅不行吗)"
+				"======================================="
+			]
+			dependencies: ["7966281604E31F57"]
+			id: "1CCB1E550E34BFEB"
+			tasks: [{
+				id: "1C3291104858CEB0"
+				type: "item"
+				item: "minecolonies:blockhutbaker"
+			}]
+			rewards: [{
+				id: "5DDD9D83EC75D820"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			description: [
+				"======================================="
+				"运送材料"
+				"======================================="
+			]
+			dependencies: ["5BE10D0497CE6787"]
+			id: "7A61EAC6A7B80C96"
+			tasks: [{
+				id: "540F37EBBACBE3F4"
+				type: "item"
+				item: "minecolonies:blockhutdeliveryman"
+			}]
+			rewards: [{
+				id: "59758B0EE5B8AB68"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			description: [
+				"======================================="
+				"存放城市的建筑材料与死亡村民的遗物"
+				"======================================="
+				"(运输员)"
+			]
+			id: "774E89ADA2A6FC03"
+			tasks: [{
+				id: "4D14BB2220A46104"
+				type: "item"
+				item: "minecolonies:blockhutwarehouse"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			description: [
+				"======================================="
+				"救出受伤的村民"
+				"======================================="
+			]
+			dependencies: ["5BE7748B24E4FEDB"]
+			id: "366C21B9BAC9AADE"
+			tasks: [{
+				id: "3335ED614DE11A3B"
+				type: "item"
+				item: "minecolonies:blockhuthospital"
+			}]
+			rewards: [{
+				id: "658BC7A2EC9DB828"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			description: [
+				"======================================="
+				"我觉得你应该把他规划到河边或者海边"
+				"======================================="
+			]
+			dependencies: ["710282AFE9024E19"]
+			id: "465448DE0ED0E3EF"
+			tasks: [{
+				id: "4AE5D3C185194134"
+				type: "item"
+				item: "minecolonies:blockhutfisherman"
+			}]
+			rewards: [{
+				id: "172DF2C2E73070C0"
+				type: "item"
+				item: {
+					id: "aquaculture:neptunium_fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			description: [
+				"======================================="
+				"砍树工"
+				"你不会把他建造在平原吧?"
+				"======================================="
+			]
+			dependencies: ["710282AFE9024E19"]
+			id: "785E1D821961E5E5"
+			tasks: [{
+				id: "5C85A26E54E1AB32"
+				type: "item"
+				item: "minecolonies:blockhutlumberjack"
+			}]
+			rewards: [{
+				id: "6C236E0F4E635F89"
+				type: "item"
+				item: "ore_tree:emerald_tree_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: [
+				"======================================="
+				"养点小动物怎么了?"
+				"======================================="
+			]
+			dependencies: ["710282AFE9024E19"]
+			id: "08B9CC1B03DCEFE8"
+			tasks: [{
+				id: "5E37E6096BB15E48"
+				type: "item"
+				item: "minecolonies:blockhutswineherder"
+			}]
+			rewards: [
+				{
+					id: "01FE8F39926C4C73"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "16EE6D32CE68B8FB"
+					type: "item"
+					item: "minecraft:pig_spawn_egg"
+					count: 5
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			description: [
+				"======================================="
+				"养点小动物怎么了？"
+				"======================================="
+			]
+			dependencies: ["710282AFE9024E19"]
+			id: "1E64E1B9992D4B07"
+			tasks: [{
+				id: "57AE66AFBFBA0A23"
+				type: "item"
+				item: "minecolonies:blockhutchickenherder"
+			}]
+			rewards: [{
+				id: "068AF3C6FBB8315D"
+				type: "item"
+				item: "minecraft:egg"
+				count: 64
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			description: [
+				"======================================="
+				"我喜欢吃这玩意"
+				"======================================="
+			]
+			dependencies: ["710282AFE9024E19"]
+			id: "7194D9F134FD0B3F"
+			tasks: [{
+				id: "5BC7EAC32FE7BE11"
+				type: "item"
+				item: "minecolonies:blockhutrabbithutch"
+			}]
+			rewards: [{
+				id: "2BEA0576D4D3F745"
+				type: "item"
+				item: "minecraft:rabbit_spawn_egg"
+				count: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			description: [
+				"======================================="
+				"我们需要蜂蜜!"
+				"======================================="
+			]
+			dependencies: ["710282AFE9024E19"]
+			id: "324A372FF3C3E039"
+			tasks: [{
+				id: "16148D83169AD09F"
+				type: "item"
+				item: "minecolonies:blockhutbeekeeper"
+			}]
+			rewards: [{
+				id: "0CA54C6DF91D6A44"
+				type: "item"
+				item: "minecraft:honey_bottle"
+				count: 3
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			description: [
+				"======================================="
+				"挖矿的市民最好了awa免费劳动呢！？"
+				"======================================="
+			]
+			dependencies: ["710282AFE9024E19"]
+			id: "0D4640BECAFF10CC"
+			tasks: [{
+				id: "30735E1AB1184D75"
+				type: "item"
+				item: "minecolonies:blockhutminer"
+			}]
+			rewards: [{
+				id: "620CAE01040C14C9"
+				type: "item"
+				item: {
+					id: "mekanismtools:diamond_paxel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			description: [
+				"======================================="
+				"为毛先有大学才有学校?"
+				"======================================="
+			]
+			dependencies: ["5BE7748B24E4FEDB"]
+			id: "7D7505B7A777630F"
+			tasks: [{
+				id: "630412B60EED1E26"
+				type: "item"
+				item: "minecolonies:blockhutschool"
+			}]
+			rewards: [{
+				id: "445A82A349BB8EB6"
+				type: "item"
+				item: "minecraft:emerald_block"
+				count: 5
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			description: [
+				"======================================="
+				"更好的战斗力!"
+				"去攻打其他城市！"
+				"======================================="
+			]
+			dependencies: ["5BE7748B24E4FEDB"]
+			id: "1ACA4FBC26A1E63D"
+			tasks: [{
+				id: "61742259D5FBC6CE"
+				type: "item"
+				item: "minecolonies:blockhutcombatacademy"
+			}]
+			rewards: [
+				{
+					id: "7891614BCE00A11C"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 10
+					only_one: true
+				}
+				{
+					id: "13D0027445C6C06D"
+					type: "item"
+					item: "projecte:dm_chestplate"
+					only_one: true
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: [
+				"======================================="
+				"练习一下弓吧"
+				"培养一下士兵!"
+				"======================================="
+			]
+			dependencies: ["1ACA4FBC26A1E63D"]
+			id: "693A9359845E93C0"
+			tasks: [{
+				id: "787C7784B4197953"
+				type: "item"
+				item: "minecolonies:blockhutarchery"
+			}]
+			rewards: [{
+				id: "4CFF0BC0853F8901"
+				type: "item"
+				item: {
+					id: "tconstruct:earth_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "curios:crown"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: -1.5d
+			description: [
+				"======================================="
+				"人啊走到尽头最终是死亡"
+				"======================================="
+				"成为一国之君!"
+			]
+			dependencies: ["693A9359845E93C0"]
+			id: "10FC411EB528423C"
+			tasks: [{
+				id: "260C352DE44948E8"
+				type: "item"
+				item: {
+					id: "minecolonies:pharaoscepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "03BB8737E39A5385"
+				type: "item"
+				title: "大地的君王"
+				item: "ttigraas:greater_earth_spirit"
+			}]
+		}
+	]
+}

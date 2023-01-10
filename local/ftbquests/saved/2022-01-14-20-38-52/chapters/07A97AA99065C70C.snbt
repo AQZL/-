@@ -1,0 +1,26 @@
+{
+	id: "07A97AA99065C70C"
+	group: "3430C3DC79231945"
+	order_index: 6
+	filename: "07A97AA99065C70C"
+	title: "空间站章"
+	icon: "advancedrocketry:chip_station"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "尽情期待"
+		x: 0.0d
+		y: 0.0d
+		description: [
+			"======================================="
+			"2021/11/?号制作"
+			"======================================="
+		]
+		id: "6736A4B18FA98908"
+		tasks: [{
+			id: "7A63A319A2211D7E"
+			type: "item"
+			item: "minecraft:bedrock"
+		}]
+	}]
+}

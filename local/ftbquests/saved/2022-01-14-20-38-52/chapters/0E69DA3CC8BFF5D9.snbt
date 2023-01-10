@@ -1,0 +1,83 @@
+{
+	id: "0E69DA3CC8BFF5D9"
+	group: "3430C3DC79231945"
+	order_index: 9
+	filename: "0E69DA3CC8BFF5D9"
+	title: "枪械章"
+	icon: {
+		id: "tac:sti2011"
+		Count: 1b
+		tag: {
+			AmmoCount: 10
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -1.0d
+			description: ["制作枪械必要工作台!"]
+			id: "4833B91C45C480FD"
+			tasks: [{
+				id: "2994FEB2747879EB"
+				type: "item"
+				item: "cgm:workbench"
+			}]
+			rewards: [{
+				id: "1DFA5C956EE0FD04"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["附属模组枪械的必要工作台"]
+			id: "4935C025E4A642D0"
+			tasks: [{
+				id: "1E41E89D9646E4EE"
+				type: "item"
+				item: "tac:workbench"
+			}]
+			rewards: [{
+				id: "78C65F2022A3D747"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: [
+				"4833B91C45C480FD"
+				"4935C025E4A642D0"
+			]
+			id: "4E194458E1058BF1"
+			tasks: [{
+				id: "51721B8528F26B22"
+				type: "item"
+				item: {
+					id: "tac:m1911"
+					Count: 1b
+					tag: {
+						AmmoCount: 8
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2FCDB3F72CD69A08"
+					type: "item"
+					item: "tac:round45"
+					count: 12
+				}
+				{
+					id: "206D14196C7BDFCB"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+			]
+		}
+	]
+}

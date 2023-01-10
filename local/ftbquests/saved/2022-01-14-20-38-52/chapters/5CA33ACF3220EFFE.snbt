@@ -1,0 +1,538 @@
+{
+	id: "5CA33ACF3220EFFE"
+	group: "3430C3DC79231945"
+	order_index: 0
+	filename: "5CA33ACF3220EFFE"
+	title: "基础章"
+	icon: "minecraft:stone"
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "开局先撸点木头吧awa"
+			icon: {
+				id: "minecraft:wooden_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.5d
+			y: 0.5d
+			shape: "rsquare"
+			id: "76BD149829B974E8"
+			tasks: [{
+				id: "0E0A8D5DF820DB17"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 64L
+				consume_items: false
+			}]
+			rewards: [{
+				id: "053CAB5BF0E3138E"
+				type: "item"
+				item: "smallships:dark_oak_dhow"
+				only_one: true
+			}]
+		}
+		{
+			title: "换取技能(如果有了的可以不用换)"
+			icon: "ttigraas:lust"
+			x: -8.5d
+			y: -1.5d
+			subtitle: "使用按键来用捕食者!"
+			description: [
+				"==============================================="
+				"如果转生没有得到想要的技能那就用东西来换这个技能吧!"
+				"==============================================="
+			]
+			dependencies: ["76BD149829B974E8"]
+			id: "0F24766A386D67AD"
+			tasks: [{
+				id: "2B162B32018C1673"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2621147C13BEED6F"
+				type: "item"
+				item: "ttigraas:predator"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			description: ["制作一支加速火把吧!"]
+			dependencies: ["76BD149829B974E8"]
+			id: "4B76CFCCA3C98719"
+			tasks: [{
+				id: "321A8FBDEA8165E0"
+				type: "item"
+				item: "torcherino:torcherino"
+			}]
+			rewards: [{
+				id: "3A2257CEC69B54D8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.5d
+			y: -0.5d
+			description: ["更加高级的加速火把"]
+			dependencies: ["4B76CFCCA3C98719"]
+			id: "5C437B55087666C9"
+			tasks: [{
+				id: "18F1E5B9BA268E7C"
+				type: "item"
+				item: "torcherino:compressed_torcherino"
+			}]
+			rewards: [{
+				id: "3349F7382E489FFC"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			description: ["加速火把中的王中王"]
+			dependencies: [
+				"4B76CFCCA3C98719"
+				"5C437B55087666C9"
+			]
+			id: "10D7A19688AF229F"
+			tasks: [{
+				id: "17347124A56AF249"
+				type: "item"
+				item: "torcherino:double_compressed_torcherino"
+			}]
+			rewards: [{
+				id: "00843B780CCD3DB4"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 1.5d
+			description: ["这个是个好东西"]
+			dependencies: ["76BD149829B974E8"]
+			id: "70D94EA96FA1593A"
+			tasks: [{
+				id: "5A1A9AD495CABD55"
+				type: "item"
+				item: {
+					id: "projecte:philosophers_stone"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "4A6FE82D58DE4168"
+				type: "item"
+				item: "projecte:dark_matter"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			description: ["前期的时候他有妙用!后期也一样"]
+			dependencies: ["70D94EA96FA1593A"]
+			id: "738CD083DAC33582"
+			tasks: [{
+				id: "31A61C2A419A7491"
+				type: "item"
+				item: "projecte:transmutation_table"
+			}]
+			rewards: [{
+				id: "71955012601DE069"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			description: ["更加便捷!"]
+			dependencies: [
+				"70D94EA96FA1593A"
+				"738CD083DAC33582"
+			]
+			id: "4EC49FF64DDB69FF"
+			tasks: [{
+				id: "6497A3631A3AB5D0"
+				type: "item"
+				item: "projecte:transmutation_tablet"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 1.5d
+			description: ["前期需要的矿物"]
+			dependencies: ["76BD149829B974E8"]
+			id: "69A9E53A69972277"
+			tasks: [{
+				id: "0A9E9E56BBB5828D"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 64L
+			}]
+			rewards: [{
+				id: "76B799C6878B4199"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 1.5d
+			description: ["前期需要的矿物"]
+			dependencies: ["69A9E53A69972277"]
+			id: "6C4C7CE8FEC9D712"
+			tasks: [{
+				id: "340134E517AE0880"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 64L
+			}]
+			rewards: [{
+				id: "2B8B5525FBA11916"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 1.5d
+			description: ["24个钻石耶!可以合成一些什么?"]
+			dependencies: ["6C4C7CE8FEC9D712"]
+			id: "45212B9944CCBBAB"
+			tasks: [{
+				id: "73CAA2166F1FCAC9"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 24L
+			}]
+			rewards: [{
+				id: "74A09CCCF101B584"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -0.5d
+			description: ["合成点幸运方块开一些好东西吧"]
+			dependencies: ["76BD149829B974E8"]
+			id: "4630EC8CA530FBE6"
+			tasks: [{
+				id: "6BD9504112910FB7"
+				type: "item"
+				item: "lucky:lucky_block"
+				count: 6L
+			}]
+			rewards: [{
+				id: "21710385719236D7"
+				type: "item"
+				item: "lucky:amethyst_lucky_block"
+				count: 3
+			}]
+		}
+		{
+			x: -11.5d
+			y: -0.5d
+			description: ["制作一套家具"]
+			dependencies: ["4630EC8CA530FBE6"]
+			id: "1B08F13D237A080F"
+			tasks: [
+				{
+					id: "7B8F71056A167A39"
+					type: "item"
+					item: "cfm:oak_table"
+					count: 2L
+				}
+				{
+					id: "4408C7AC890A83A7"
+					type: "item"
+					item: "cfm:oak_chair"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "344328175CA0BF4F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -13.0d
+			y: -0.5d
+			description: ["挖点黑曜石"]
+			dependencies: ["1B08F13D237A080F"]
+			id: "45793FA735AC2D0F"
+			tasks: [{
+				id: "2415862BE1720D80"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 32L
+			}]
+			rewards: [{
+				id: "164F52B063537588"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.5d
+			description: ["这个熔炉可以使你的矿物烧的很快哦"]
+			dependencies: ["76BD149829B974E8"]
+			id: "13111F0D567666A5"
+			tasks: [{
+				id: "645D4D26F5277027"
+				type: "item"
+				item: "mysticalagriculture:inferium_furnace"
+			}]
+			rewards: [{
+				id: "5752F767E9EE3C15"
+				type: "item"
+				item: "mysticalagriculture:tertium_furnace"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -1.5d
+			description: ["哇!是男孩"]
+			dependencies: ["76BD149829B974E8"]
+			id: "6EB1926252E1BEF5"
+			tasks: [{
+				id: "2978786A06578A2B"
+				type: "item"
+				item: "mca:baby_boy"
+			}]
+			rewards: [{
+				id: "4FF9F12B3FCB60EA"
+				type: "item"
+				item: "minecraft:gold_block"
+				count: 16
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.5d
+			description: [
+				"老婆是个女孩子"
+				"好棒棒！要当爸爸了"
+			]
+			dependencies: ["76BD149829B974E8"]
+			id: "68E0EFBE1AEDD04B"
+			tasks: [{
+				id: "2D5B93E1F150810C"
+				type: "item"
+				item: "mca:baby_girl"
+			}]
+			rewards: [
+				{
+					id: "3F0A500364BCB766"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "11D5A0525B839267"
+					type: "item"
+					item: {
+						id: "enderitemod:enderite_elytra"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: 3.5d
+			description: ["利用水晶制作更好的装备"]
+			dependencies: ["13111F0D567666A5"]
+			id: "6EBC86DA46BA1B98"
+			tasks: [{
+				id: "021B983D3CC2A064"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2EC77F5DAE8EDB85"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+				count: 32
+			}]
+		}
+		{
+			x: -7.0d
+			y: 3.5d
+			dependencies: ["6EBC86DA46BA1B98"]
+			id: "15B81F3D3EAA7132"
+			tasks: [{
+				id: "4B372666C45A89A4"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+			}]
+			rewards: [{
+				id: "4A0452E62C9DBA57"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+				count: 32
+			}]
+		}
+		{
+			x: -5.5d
+			y: 3.5d
+			dependencies: ["15B81F3D3EAA7132"]
+			id: "503887FA36EDFD40"
+			tasks: [{
+				id: "17FA1C12D7186A10"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+			}]
+			rewards: [{
+				id: "27ABBB12D5E6D687"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+				count: 32
+			}]
+		}
+		{
+			x: -10.0d
+			y: 3.5d
+			dependencies: ["6EBC86DA46BA1B98"]
+			id: "65BB945AA6DDFA6C"
+			tasks: [{
+				id: "7CFA4797A4091F03"
+				type: "item"
+				item: "mysticalagriculture:imperium_essence"
+			}]
+			rewards: [{
+				id: "6846F642FEA0529A"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+				count: 64
+			}]
+		}
+		{
+			x: -11.5d
+			y: 3.5d
+			dependencies: ["65BB945AA6DDFA6C"]
+			id: "18CEE4F8434CA50E"
+			tasks: [{
+				id: "438D1E69762F6E71"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+			}]
+			rewards: [{
+				id: "09F708597F801AAB"
+				type: "item"
+				item: "mysticalagradditions:nether_star_shard"
+				count: 4
+			}]
+		}
+		{
+			x: -11.5d
+			y: 4.5d
+			dependencies: ["18CEE4F8434CA50E"]
+			id: "261DBA9A1F163018"
+			tasks: [{
+				id: "608CD62B4580FFA0"
+				type: "item"
+				item: "mysticalagriculture:supremium_ingot"
+				count: 6L
+			}]
+			rewards: [{
+				id: "4D72D4D84D536FC7"
+				type: "item"
+				item: "ttigraas:greater_sky_spirit"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 4.5d
+			dependencies: ["65BB945AA6DDFA6C"]
+			id: "6B56445CFE0258FB"
+			tasks: [{
+				id: "74799353A26B09F6"
+				type: "item"
+				item: "mysticalagriculture:imperium_ingot"
+				count: 6L
+			}]
+			rewards: [{
+				id: "7764DBA229751B50"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+		}
+		{
+			x: -8.5d
+			y: 4.5d
+			dependencies: ["6EBC86DA46BA1B98"]
+			id: "6FC35119FA1FA412"
+			tasks: [{
+				id: "132F310793E2E994"
+				type: "item"
+				item: "mysticalagriculture:prosperity_ingot"
+				count: 64L
+			}]
+			rewards: [{
+				id: "71C5C9BF43735881"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+				count: 64
+			}]
+		}
+		{
+			x: -7.0d
+			y: 4.5d
+			dependencies: ["15B81F3D3EAA7132"]
+			id: "495FA9E14D081408"
+			tasks: [{
+				id: "2982DB0C7F9CF700"
+				type: "item"
+				item: "mysticalagriculture:prudentium_ingot"
+				count: 6L
+			}]
+			rewards: [{
+				id: "4C840C2F52C60AD5"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			dependencies: ["503887FA36EDFD40"]
+			id: "6B4A634E29D035DB"
+			tasks: [{
+				id: "2C80FDAFA199D6A0"
+				type: "item"
+				item: "mysticalagriculture:tertium_ingot"
+				count: 6L
+			}]
+			rewards: [{
+				id: "112598D1A744ADA6"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+		}
+	]
+}

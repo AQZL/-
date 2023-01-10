@@ -1,0 +1,42 @@
+{
+	id: "07A97AA99065C70C"
+	group: "3430C3DC79231945"
+	order_index: 7
+	filename: "07A97AA99065C70C"
+	title: "空间站章"
+	icon: "advancedrocketry:chip_station"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "敬请期待~"
+			x: 0.0d
+			y: -0.5d
+			id: "2FEC2DB58D2DA9BC"
+			tasks: [{
+				id: "56713EC6F8D8AD53"
+				type: "kill"
+				entity: "minecraft:bee"
+				value: 1000000L
+			}]
+			rewards: [{
+				id: "4CD94436AD853F1F"
+				type: "item"
+				item: "minecraft:diamond_block"
+				count: 6400
+			}]
+		}
+		{
+			title: "我喜欢这个整合包!"
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["2FEC2DB58D2DA9BC"]
+			id: "6355996DD622F8CA"
+			tasks: [{
+				id: "0202A71F4620067A"
+				type: "item"
+				item: "minecraft:bedrock"
+			}]
+		}
+	]
+}

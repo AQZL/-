@@ -1,0 +1,22 @@
+{
+	id: "4E424831FD29D5B5"
+	group: "3430C3DC79231945"
+	order_index: 8
+	filename: "4E424831FD29D5B5"
+	title: "魔法史莱姆章"
+	icon: "ttigraas:pride"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "敬请期待!对不起"
+		x: 0.0d
+		y: 0.0d
+		subtitle: "详细教程请看物品栏里面的:苟活书"
+		id: "3204D2C3003EC842"
+		tasks: [{
+			id: "1080925A6105F846"
+			type: "item"
+			item: "mob_grinding_utils:golden_egg"
+		}]
+	}]
+}

@@ -1,0 +1,58 @@
+{
+	id: "339FF9CE2BD4EEB6"
+	group: "531B2AEA1BA39DC7"
+	order_index: 0
+	filename: "339FF9CE2BD4EEB6"
+	title: "工业类"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "做那么多?awa"
+			x: -12.5d
+			y: -3.5d
+			id: "05E2FFC488967517"
+			tasks: [{
+				id: "75D8FB61B195EF1F"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "3BC89B1BE6B437A5"
+					type: "item"
+					item: "mekanismgenerators:wind_generator"
+					count: 64
+					only_one: true
+				}
+				{
+					id: "27D1DCA94C58D09C"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 64
+					only_one: true
+				}
+			]
+		}
+		{
+			title: "好简单!"
+			x: -11.0d
+			y: -3.5d
+			id: "1563ED8FF5ED8AB1"
+			tasks: [{
+				id: "11A9B4F4030256FF"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+				count: 64L
+			}]
+			rewards: [{
+				id: "3DE644184EB715EB"
+				type: "item"
+				item: "minecraft:diamond_block"
+				count: 32
+				only_one: true
+			}]
+		}
+	]
+}

@@ -1,0 +1,462 @@
+{
+	id: "61C7F986967D3475"
+	group: "3430C3DC79231945"
+	order_index: 1
+	filename: "61C7F986967D3475"
+	title: "工业章"
+	icon: "industrialforegoing:animal_feeder"
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "工业怎么可以少了电呢"
+			x: -4.5d
+			y: 5.0d
+			dependencies: ["4116869F2A5D12C0"]
+			id: "142E05CA51599C89"
+			tasks: [{
+				id: "370F58F0B65861C4"
+				type: "item"
+				item: "industrialforegoing:pitiful_generator"
+				count: 3L
+			}]
+			rewards: [{
+				id: "24748234A1C7A64B"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+				only_one: true
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.0d
+			dependencies: ["142E05CA51599C89"]
+			id: "7AE07E77B0003471"
+			tasks: [{
+				id: "05114BFE25E9EEDB"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+			rewards: [{
+				id: "30239123F34A1CC8"
+				type: "item"
+				item: "industrialforegoing:dryrubber"
+				count: 32
+				only_one: true
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			dependencies: ["7AE07E77B0003471"]
+			id: "679EA10C2C0B7F93"
+			tasks: [{
+				id: "6FF95D1FE5E7D695"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+			rewards: [{
+				id: "5D3C4351DF4F1D7D"
+				type: "item"
+				item: "industrialforegoing:tinydryrubber"
+				count: 10
+				only_one: true
+			}]
+		}
+		{
+			title: "用电力来烧东西!"
+			x: 1.5d
+			y: 5.0d
+			dependencies: ["679EA10C2C0B7F93"]
+			id: "2EF8ED5840BCCFE1"
+			tasks: [{
+				id: "2622D3477E255FF4"
+				type: "item"
+				item: "industrialforegoing:resourceful_furnace"
+			}]
+			rewards: [{
+				id: "0AB49FC5C8948440"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+				only_one: true
+			}]
+		}
+		{
+			title: "工业的开始"
+			x: -4.5d
+			y: 3.0d
+			id: "4116869F2A5D12C0"
+			tasks: [{
+				id: "4FBCF61D2FC20831"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "5966BF184082A16B"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+				count: 3
+				only_one: true
+			}]
+		}
+		{
+			title: "合成必备"
+			x: -2.5d
+			y: 7.0d
+			dependencies: ["7AE07E77B0003471"]
+			id: "562B0D1AE278CA5D"
+			tasks: [{
+				id: "686CE098450FE7C0"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [{
+				id: "1F55A5270F0FB7CE"
+				type: "item"
+				item: "industrialforegoing:latex_bucket"
+				only_one: true
+			}]
+		}
+		{
+			title: "更高级的燃烧发电机"
+			x: 1.5d
+			y: 7.0d
+			dependencies: [
+				"562B0D1AE278CA5D"
+				"2EF8ED5840BCCFE1"
+			]
+			id: "179B5884303BCFA0"
+			tasks: [{
+				id: "755F4E419D02D155"
+				type: "item"
+				item: "industrialforegoing:mycelial_furnace"
+			}]
+			rewards: [{
+				id: "2F06B820BE9E2AA4"
+				type: "item"
+				item: "industrialforegoing:mycelial_magma"
+				only_one: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["179B5884303BCFA0"]
+			id: "48669C1120084349"
+			tasks: [{
+				id: "6FAA2A2C040A4096"
+				type: "item"
+				item: "industrialforegoing:enchantment_factory"
+			}]
+			rewards: [{
+				id: "533355415261413F"
+				type: "item"
+				item: "mysticalagriculture:supremium_ingot"
+				only_one: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["179B5884303BCFA0"]
+			id: "04BE18A0C36AA2E0"
+			tasks: [{
+				id: "084892E503B98F4A"
+				type: "item"
+				item: "industrialforegoing:enchantment_applicator"
+			}]
+			rewards: [{
+				id: "12B0A2E87401A3AC"
+				type: "item"
+				item: "libvulpes:ingottin"
+				count: 64
+				only_one: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.0d
+			dependencies: ["179B5884303BCFA0"]
+			id: "0A2483DA97F31BD2"
+			tasks: [{
+				id: "1BF138662B9A7D80"
+				type: "item"
+				item: "industrialforegoing:potion_brewer"
+			}]
+			rewards: [{
+				id: "652819EC8DB2B7D6"
+				type: "item"
+				item: "ore_tree:diamond_tree_sapling"
+				only_one: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.5d
+			dependencies: ["179B5884303BCFA0"]
+			id: "257249749617D573"
+			tasks: [{
+				id: "14E7976FE843FA0E"
+				type: "item"
+				item: "industrialforegoing:mob_duplicator"
+			}]
+			rewards: [{
+				id: "3C60E8BDADECEE68"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 3
+				only_one: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 9.0d
+			dependencies: ["179B5884303BCFA0"]
+			id: "73F90215CADC2993"
+			tasks: [{
+				id: "5442DA45DEA4571C"
+				type: "item"
+				item: "industrialforegoing:material_stonework_factory"
+			}]
+			rewards: [{
+				id: "40022C2DAF46BA34"
+				type: "item"
+				item: "twilightforest:mining_sapling"
+				only_one: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 10.5d
+			dependencies: ["179B5884303BCFA0"]
+			id: "4C0BD5ABFECF7329"
+			tasks: [{
+				id: "24A53D17FC69B930"
+				type: "item"
+				item: "industrialforegoing:water_condensator"
+			}]
+			rewards: [{
+				id: "6EED6444ECBA2AF3"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+				count: 5
+				only_one: true
+			}]
+		}
+		{
+			title: "提升一下机器速度吧!"
+			x: 1.5d
+			y: 9.0d
+			dependencies: ["179B5884303BCFA0"]
+			id: "381F9251BD6A014A"
+			tasks: [{
+				id: "5A9E167524A22ADD"
+				type: "item"
+				item: {
+					id: "industrialforegoing:speed_addon_1"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Speed: 2.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "74728DE39EE5E25B"
+				type: "item"
+				item: {
+					id: "industrialforegoing:speed_addon_1"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Speed: 2.0f
+						}
+					}
+				}
+				only_one: true
+			}]
+		}
+		{
+			title: "更快的速度!awa"
+			x: 6.0d
+			y: 7.0d
+			dependencies: [
+				"48669C1120084349"
+				"04BE18A0C36AA2E0"
+				"0A2483DA97F31BD2"
+				"257249749617D573"
+				"73F90215CADC2993"
+				"4C0BD5ABFECF7329"
+				"381F9251BD6A014A"
+			]
+			id: "380FFE17CCC5259D"
+			tasks: [{
+				id: "38CE770A5A48E8B9"
+				type: "item"
+				item: {
+					id: "industrialforegoing:speed_addon_2"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Speed: 3.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2E3983746DEB10BB"
+				type: "item"
+				item: {
+					id: "industrialforegoing:speed_addon_2"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Speed: 3.0f
+						}
+					}
+				}
+				only_one: true
+			}]
+		}
+		{
+			title: "步入自动化|新时代"
+			x: 8.0d
+			y: 7.0d
+			dependencies: ["380FFE17CCC5259D"]
+			id: "1F6A84285256EB44"
+			tasks: [{
+				id: "1374A28C9972B8DA"
+				type: "item"
+				item: "industrialforegoing:conveyor"
+				count: 32L
+			}]
+			rewards: [{
+				id: "1B20A100CF2A8BF5"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 15
+				only_one: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 5.0d
+			dependencies: ["1F6A84285256EB44"]
+			id: "1753D25D5A6CC39B"
+			tasks: [{
+				id: "5536DF5EE5218B9E"
+				type: "item"
+				item: "industrialforegoing:conveyor_extraction_upgrade"
+			}]
+			rewards: [{
+				id: "65D3371A6E900197"
+				type: "item"
+				item: "minecraft:gold_block"
+				only_one: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 6.0d
+			dependencies: ["1F6A84285256EB44"]
+			id: "5D08D52FB8BE7CA5"
+			tasks: [{
+				id: "2BFA5543DCA304C5"
+				type: "item"
+				item: "industrialforegoing:conveyor_insertion_upgrade"
+			}]
+			rewards: [{
+				id: "0868EED1012B034F"
+				type: "item"
+				item: "minecraft:diamond_block"
+				only_one: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 7.0d
+			dependencies: ["1F6A84285256EB44"]
+			id: "4077194DE6F5F1CA"
+			tasks: [{
+				id: "3EC718E04CA2088D"
+				type: "item"
+				item: "industrialforegoing:conveyor_detection_upgrade"
+			}]
+			rewards: [{
+				id: "7F27A5AE8A4918DF"
+				type: "item"
+				item: "minecraft:gold_block"
+				only_one: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 8.0d
+			dependencies: ["1F6A84285256EB44"]
+			id: "3EF81CF845830A54"
+			tasks: [{
+				id: "1EAB93598AA25D1C"
+				type: "item"
+				item: "industrialforegoing:conveyor_bouncing_upgrade"
+			}]
+			rewards: [{
+				id: "4518BF83E34B2CEB"
+				type: "item"
+				item: "minecraft:diamond_block"
+				only_one: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 9.0d
+			dependencies: ["1F6A84285256EB44"]
+			id: "26C32073EAD46B24"
+			tasks: [{
+				id: "1005C76C123A4DF3"
+				type: "item"
+				item: "industrialforegoing:conveyor_dropping_upgrade"
+			}]
+			rewards: [{
+				id: "40765F7D5F4A5BA0"
+				type: "item"
+				item: "minecraft:gold_block"
+				only_one: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 10.0d
+			dependencies: ["1F6A84285256EB44"]
+			id: "674BC081179E4C65"
+			tasks: [{
+				id: "2D8547454646AA48"
+				type: "item"
+				item: "industrialforegoing:conveyor_blinking_upgrade"
+			}]
+			rewards: [{
+				id: "3586B7C9226041D7"
+				type: "item"
+				item: "minecraft:diamond_block"
+				only_one: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			dependencies: ["1F6A84285256EB44"]
+			id: "4C7843E7D2BEBE90"
+			tasks: [{
+				id: "6F47785E6DF0BE3F"
+				type: "item"
+				item: "industrialforegoing:conveyor_splitting_upgrade"
+			}]
+			rewards: [{
+				id: "6C9916F151F2FBB0"
+				type: "item"
+				item: "minecraft:diamond_block"
+				only_one: true
+			}]
+		}
+	]
+}

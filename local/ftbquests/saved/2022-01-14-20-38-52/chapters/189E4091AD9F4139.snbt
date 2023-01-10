@@ -1,0 +1,124 @@
+{
+	id: "189E4091AD9F4139"
+	group: "3430C3DC79231945"
+	order_index: 5
+	filename: "189E4091AD9F4139"
+	title: "娱乐章"
+	icon: {
+		id: "simpleplanes:plane"
+		Count: 1b
+		tag: {
+			EntityTag: {
+				material: "minecraft:oak_planks"
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "带我上天！"
+			x: -14.5d
+			y: 0.0d
+			id: "10836CDAD9CB670A"
+			tasks: [{
+				id: "15D8365AF172A935"
+				type: "item"
+				item: {
+					id: "simpleplanes:plane"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							material: "minecraft:oak_planks"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "48D2C1E792A5FA76"
+				type: "item"
+				item: {
+					id: "simpleplanes:large_plane"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							material: "minecraft:oak_planks"
+						}
+					}
+				}
+				only_one: true
+			}]
+		}
+		{
+			title: "原地上天!"
+			x: -12.5d
+			y: 0.0d
+			dependencies: ["10836CDAD9CB670A"]
+			id: "31DA7622BBAEAA48"
+			tasks: [{
+				id: "2FDD47B5BCB82E2B"
+				type: "item"
+				item: {
+					id: "simpleplanes:helicopter"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							material: "minecraft:oak_planks"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "399CEABBB1222D2F"
+				type: "item"
+				item: "minecraft:diamond_block"
+				only_one: true
+			}]
+		}
+		{
+			title: "一个背包"
+			x: -14.5d
+			y: -2.0d
+			description: ["2个背包模组?可以套娃吗"]
+			dependencies: ["10836CDAD9CB670A"]
+			id: "2A9E69CDB96183DF"
+			tasks: [{
+				id: "1857C853FE6A606E"
+				type: "item"
+				item: {
+					id: "travelersbackpack:standard"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7F0C656AE33B3FB8"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+				only_one: true
+			}]
+		}
+		{
+			x: -16.0d
+			y: -2.0d
+			description: [
+				"======================================="
+				"2D背包！不过他更好用"
+				"还可以在饰品栏上面装备!"
+				"======================================="
+			]
+			dependencies: ["2A9E69CDB96183DF"]
+			id: "4238278E282351F8"
+			tasks: [{
+				id: "75878AE58FA1FA72"
+				type: "item"
+				item: "usefulbackpacks:backpack_small"
+			}]
+			rewards: [{
+				id: "0F210FF77A9196ED"
+				type: "item"
+				item: "usefulbackpacks:backpack_enderchest"
+			}]
+		}
+	]
+}

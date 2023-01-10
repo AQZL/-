@@ -1,0 +1,421 @@
+{
+	id: "5CA33ACF3220EFFE"
+	group: "3430C3DC79231945"
+	order_index: 1
+	filename: "5CA33ACF3220EFFE"
+	title: "开始章"
+	icon: "minecraft:stone"
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "开局先撸点木头吧awa"
+			icon: {
+				id: "minecraft:wooden_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.5d
+			y: 0.5d
+			shape: "rsquare"
+			id: "76BD149829B974E8"
+			tasks: [{
+				id: "0E0A8D5DF820DB17"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 64L
+				consume_items: false
+			}]
+			rewards: [{
+				id: "053CAB5BF0E3138E"
+				type: "item"
+				item: "smallships:dark_oak_dhow"
+				only_one: true
+			}]
+		}
+		{
+			title: "去地下挖点经验矿吧"
+			icon: "exp_ore:block_exp_ore"
+			x: -7.0d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: [
+				"0E0A8D5DF820DB17"
+				"76BD149829B974E8"
+			]
+			id: "225C191D139DA40B"
+			tasks: [{
+				id: "46A4CE50A82A6483"
+				type: "xp"
+				value: 30L
+				points: false
+			}]
+			rewards: [{
+				id: "179678CC4FC54F57"
+				type: "item"
+				item: "mysticalagriculture:inferium_furnace"
+				only_one: true
+			}]
+		}
+		{
+			title: "为转换桌做准备!"
+			x: -5.5d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: [
+				"46A4CE50A82A6483"
+				"76BD149829B974E8"
+				"225C191D139DA40B"
+			]
+			id: "01105FFDDC1D9C7D"
+			tasks: [{
+				id: "3C7DC96C39656137"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 5L
+			}]
+			rewards: [{
+				id: "02524F1F2B7C4CDE"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 4
+				only_one: true
+			}]
+		}
+		{
+			title: "制作一个转换桌"
+			x: -4.0d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: [
+				"3C7DC96C39656137"
+				"76BD149829B974E8"
+				"225C191D139DA40B"
+				"01105FFDDC1D9C7D"
+			]
+			id: "662D1C6A7768F758"
+			tasks: [{
+				id: "35389C1583712C8E"
+				type: "item"
+				item: "projecte:transmutation_table"
+			}]
+			rewards: [{
+				id: "7FA23B9C562DA2E5"
+				type: "item"
+				item: "projecte:transmutation_tablet"
+				only_one: true
+			}]
+		}
+		{
+			title: "储存物品(你需要家)"
+			x: -2.5d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: [
+				"35389C1583712C8E"
+				"76BD149829B974E8"
+				"225C191D139DA40B"
+				"01105FFDDC1D9C7D"
+				"662D1C6A7768F758"
+			]
+			id: "50DE7A4C3DC0ABC5"
+			tasks: [{
+				id: "204EA7D4BB48813D"
+				type: "item"
+				item: "ironchest:crystal_chest"
+			}]
+			rewards: [{
+				id: "084C10B4D096505C"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+				count: 4
+				only_one: true
+			}]
+		}
+		{
+			title: "来一套家具"
+			x: -1.0d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: [
+				"50DE7A4C3DC0ABC5"
+				"76BD149829B974E8"
+				"225C191D139DA40B"
+				"01105FFDDC1D9C7D"
+				"662D1C6A7768F758"
+			]
+			id: "02AD4AB15AC90F2E"
+			tasks: [
+				{
+					id: "4042CB835EC15FF0"
+					type: "item"
+					item: "cfm:oak_chair"
+					count: 2L
+				}
+				{
+					id: "6216E9CE3235575F"
+					type: "item"
+					item: "cfm:oak_table"
+				}
+			]
+			rewards: [{
+				id: "4E416D3F332E09C1"
+				type: "item"
+				item: "cfm:white_sofa"
+				count: 5
+				only_one: true
+			}]
+		}
+		{
+			title: "挖亿点矿"
+			x: 1.5d
+			y: -3.0d
+			shape: "rsquare"
+			dependencies: ["02AD4AB15AC90F2E"]
+			id: "75C0D7C10DE9C896"
+			tasks: [{
+				id: "1EDF9ECFC7448058"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 64L
+			}]
+			rewards: [{
+				id: "24CE4E5DD96A9071"
+				type: "item"
+				item: "minecraft:diamond_block"
+				only_one: true
+			}]
+		}
+		{
+			title: "挖亿点铁"
+			x: 1.5d
+			y: -1.5d
+			shape: "rsquare"
+			dependencies: ["02AD4AB15AC90F2E"]
+			id: "1D6E1816EEECCC9E"
+			tasks: [{
+				id: "209B665E80F2AD32"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 64L
+			}]
+			rewards: [{
+				id: "45BCF54137FF5863"
+				type: "item"
+				item: "minecraft:emerald_block"
+				only_one: true
+			}]
+		}
+		{
+			title: "挖亿点好东西"
+			x: 1.5d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["02AD4AB15AC90F2E"]
+			id: "4412B27DCFB36468"
+			tasks: [{
+				id: "44EE9B10A72705A3"
+				type: "item"
+				item: "mysticalagriculture:prosperity_shard"
+				count: 128L
+			}]
+			rewards: [
+				{
+					id: "1002AD5D396DA3FF"
+					type: "item"
+					item: "astralsorcery:hand_telescope"
+					only_one: true
+				}
+				{
+					id: "1F23AB31EC99341F"
+					type: "item"
+					item: "torcherino:torcherino"
+					only_one: true
+				}
+			]
+		}
+		{
+			title: "挖亿点铜"
+			x: 1.5d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["02AD4AB15AC90F2E"]
+			id: "020B22FEB7377C90"
+			tasks: [{
+				id: "48E928C8572F72E2"
+				type: "item"
+				item: "libvulpes:orecopper"
+				count: 32L
+			}]
+			rewards: [{
+				id: "2588080A468E7626"
+				type: "item"
+				item: "minecraft:coal"
+				count: 128
+				only_one: true
+			}]
+		}
+		{
+			title: "做2个幸运方块"
+			x: 1.5d
+			y: 3.0d
+			shape: "rsquare"
+			dependencies: ["02AD4AB15AC90F2E"]
+			id: "3D9674C12E9712C8"
+			tasks: [{
+				id: "53D09B523C4CF162"
+				type: "item"
+				item: "lucky:lucky_block"
+				count: 2L
+			}]
+			rewards: [{
+				id: "3E29B50DE409A3FA"
+				type: "item"
+				item: "lucky:lucky_block"
+				count: 12
+				only_one: true
+			}]
+		}
+		{
+			title: "做个机械"
+			x: 4.5d
+			y: 0.5d
+			dependencies: [
+				"75C0D7C10DE9C896"
+				"1D6E1816EEECCC9E"
+				"4412B27DCFB36468"
+				"020B22FEB7377C90"
+				"3D9674C12E9712C8"
+			]
+			id: "347E557F25503E28"
+			tasks: [{
+				id: "1713A100D06F58DA"
+				type: "item"
+				item: "mekanism:basic_smelting_factory"
+			}]
+			rewards: [{
+				id: "051160F781725C14"
+				type: "item"
+				item: "mekanism:basic_enriching_factory"
+				only_one: true
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.5d
+			dependencies: ["347E557F25503E28"]
+			id: "5115FB5E9C852607"
+			tasks: [{
+				id: "2B53AB74A2438F6F"
+				type: "item"
+				item: "mekanism:basic_crushing_factory"
+			}]
+			rewards: [{
+				id: "771A75A714295E77"
+				type: "item"
+				item: "mekanism:basic_compressing_factory"
+				only_one: true
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			dependencies: ["5115FB5E9C852607"]
+			id: "76A0C00D4A48FF3E"
+			tasks: [{
+				id: "2192142CBEE81F6D"
+				type: "item"
+				item: "mekanism:basic_combining_factory"
+			}]
+			rewards: [{
+				id: "7C2AF7FFC01BB624"
+				type: "item"
+				item: "mekanism:basic_purifying_factory"
+				only_one: true
+			}]
+		}
+		{
+			title: "做一个超级物质!最后的新手任务"
+			x: 9.0d
+			y: 0.5d
+			dependencies: ["76A0C00D4A48FF3E"]
+			id: "56F49823355D4DC4"
+			tasks: [{
+				id: "74C87EF25159FC75"
+				type: "item"
+				item: "projecte:red_matter"
+			}]
+			rewards: [{
+				id: "53B510867A7519B3"
+				type: "item"
+				item: {
+					id: "projecte:rm_katar"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+				only_one: true
+			}]
+		}
+		{
+			title: "找到末影之眼"
+			x: 10.5d
+			y: 0.5d
+			dependencies: ["56F49823355D4DC4"]
+			id: "55BE43FF23C134CB"
+			tasks: [{
+				id: "383A4B2427C84864"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 16L
+			}]
+			rewards: [{
+				id: "54BA3A6AC7625898"
+				type: "item"
+				item: "enderitemod:enderite_ore"
+				only_one: true
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.5d
+			dependencies: ["55BE43FF23C134CB"]
+			id: "082A07D4F4106830"
+			tasks: [{
+				id: "48A3848C12625FFA"
+				type: "item"
+				item: "minecraft:ender_eye"
+				count: 16L
+			}]
+			rewards: [{
+				id: "00D04E73FB59A5C1"
+				type: "item"
+				item: "mob_grinding_utils:dragon_muffler"
+				only_one: true
+			}]
+		}
+		{
+			title: "击杀末影龙并且合成出这玩意"
+			x: 13.5d
+			y: 0.5d
+			dependencies: ["082A07D4F4106830"]
+			id: "1F4B0A9E6086BD75"
+			tasks: [{
+				id: "2EF769BCCB4CB03D"
+				type: "item"
+				item: "productivebees:dragon_egg_hive"
+			}]
+			rewards: [{
+				id: "6E8CC3772F8C651D"
+				type: "item"
+				item: "mysticalagriculture:dragon_egg_essence"
+				count: 16
+				only_one: true
+			}]
+		}
+	]
+}

@@ -1,0 +1,180 @@
+{
+	id: "10458722B4A8D046"
+	group: "3430C3DC79231945"
+	order_index: 2
+	filename: "10458722B4A8D046"
+	title: "魔法章"
+	icon: {
+		id: "minecolonies:scepterpermission"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -13.0d
+			y: -5.0d
+			subtitle: " 成为魔王"
+			description: [
+				"==============================="
+				"成为魔王需要杀村民和玩家哦"
+				"加油杀把"
+				"==============================="
+			]
+			dependencies: ["605D6772C2BDAF4D"]
+			id: "2A5249884F6A3F64"
+			tasks: [{
+				id: "153F059594795CF7"
+				type: "kill"
+				title: "击杀人类(村民)1100只"
+				icon: "mysticalagradditions:withering_soul"
+				entity: "minecraft:villager"
+				value: 1100L
+			}]
+			rewards: [
+				{
+					id: "1B3D993D8EDAA6C7"
+					type: "item"
+					item: "lucky:lucky_block"
+					count: 64
+					only_one: true
+				}
+				{
+					id: "7E6295B0DDF66CAC"
+					type: "item"
+					item: "minecraft:gold_block"
+					count: 64
+				}
+				{
+					id: "1EFAF42351C7D936"
+					type: "item"
+					item: "ttigraas:greater_sky_spirit"
+				}
+				{
+					id: "7F583DFA609F63C6"
+					type: "item"
+					item: "mysticaladaptations:insanium_furnace"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -5.0d
+			subtitle: "(史莱姆模组章)"
+			id: "605D6772C2BDAF4D"
+			tasks: [{
+				id: "1CD0229F34C9CE22"
+				type: "xp"
+				value: 100L
+				points: false
+			}]
+			rewards: [{
+				id: "7DF3562B2302AD35"
+				type: "item"
+				item: "ttigraas:gravity_manipulation"
+				only_one: true
+			}]
+		}
+		{
+			title: "魔法的前置"
+			x: -14.5d
+			y: -2.5d
+			subtitle: "(魔法使章)"
+			description: [
+				"==============================="
+				"都有书了就不需要教程了吧?awa"
+				"==============================="
+			]
+			id: "072F01EBF2C8653B"
+			tasks: [{
+				id: "68E04AA11500696D"
+				type: "item"
+				item: "mahoutsukai:guidebook"
+			}]
+			rewards: [{
+				id: "57133C6B415EE7A9"
+				type: "item"
+				item: "exp_ore:block_exp_ore"
+				count: 32
+				only_one: true
+			}]
+		}
+		{
+			title: "成就:合成出魔法棒"
+			x: -15.5d
+			y: -1.0d
+			description: [
+				"==============================="
+				"不要在家使用!会有\"钻石块掉下来哦\""
+				"==============================="
+			]
+			dependencies: ["072F01EBF2C8653B"]
+			id: "5398045D03D37EBA"
+			tasks: [{
+				id: "4787A73AF39C87D9"
+				type: "item"
+				item: {
+					id: "mahoutsukai:mystic_staff"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7BDB4FA594EA152B"
+				type: "item"
+				item: {
+					id: "mahoutsukai:scroll_mystic_staff"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_CASTER_NAME: ""
+						}
+					}
+				}
+				only_one: true
+			}]
+		}
+		{
+			title: "成就合成:合成次元魔杖"
+			x: -13.5d
+			y: -1.0d
+			description: [
+				"在草原上使用吧"
+				"==============================="
+				"好东西"
+				"==============================="
+			]
+			dependencies: ["072F01EBF2C8653B"]
+			id: "73E952080DBE945B"
+			tasks: [{
+				id: "729D81D31DEB722E"
+				type: "item"
+				item: {
+					id: "mahoutsukai:spatial_disorientation_staff"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "14EC95853679545C"
+				type: "item"
+				item: {
+					id: "mahoutsukai:scroll_spatial_disorientation"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_CASTER_NAME: ""
+						}
+					}
+				}
+			}]
+		}
+	]
+}
